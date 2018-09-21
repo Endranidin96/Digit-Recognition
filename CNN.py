@@ -3,7 +3,7 @@
 """
 Created on Wed Jul 04 19:39:57 2018
 
-@author: user
+@author: adi
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             """
 import keras
 from keras.datasets import mnist
@@ -59,4 +59,4 @@ model = Model([inp],out)
 
 model.compile(loss='mse', optimizer='adam',metrics=['accuracy']) 
 
-model.fit(x_train,y_train_one_hot,epochs=10,verbose=2)
+model.fit(x_train,y_train_one_hot,epochs=12,verbose=2)
