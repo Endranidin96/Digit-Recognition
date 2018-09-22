@@ -41,7 +41,7 @@ inp = Input(shape=(28,28,1))
 
 #inp = Reshape((28,28,1))(inp) 
 
-conv = Conv2D(32, (3,3), activation='sigmoid')(inp) 
+conv = Conv2D(32, (3,3), activation='relu')(inp) 
 
 pool = MaxPooling2D((2,2))(conv) 
 
